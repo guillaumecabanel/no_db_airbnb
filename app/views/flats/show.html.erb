@@ -1,0 +1,16 @@
+<div class="card text-center">
+  <div class="card-header">
+    <%= image_tag @flat["imageUrl"], height: 300%>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= @flat['name'] %></h5>
+   </div>
+  <div class="card-footer text-muted">
+    <%= @flat["price"] %> <%= @flat["priceCurrency"] %>
+  </div>
+</div>
+
+<%= link_to flats_path, class: "btn btn-primary" do %>
+  <i class="fas fa-caret-square-left"></i>
+  back to all flats
+<% end %>
